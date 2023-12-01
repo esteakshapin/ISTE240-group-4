@@ -9,7 +9,7 @@
         ?>
     </title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="asset/scripts/index.js"></script>
+    <script src="assets/scripts/index.js"></script>
   </head>
 
   <body>
@@ -20,7 +20,7 @@
         <div class="logo">
           <!-- Logo class to make the dropdown menu-->
           <img
-            src="media\learnix logo.png"
+            src="assets/media/learnix logo.png"
             alt="Learnix Logo"
             width="60px"
             heigh="auto"
