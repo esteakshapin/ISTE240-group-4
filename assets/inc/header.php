@@ -8,7 +8,7 @@
             echo "Learnix - " . $page;
         ?>
     </title>
-    <link rel="stylesheet" href="assets/media/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <script src="asset/scripts/index.js"></script>
   </head>
 
