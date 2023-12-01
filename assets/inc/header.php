@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         <?php
             echo "Learnix - " . $page;
         ?>
     </title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js"></script>
+    <link rel="stylesheet" href="assets/media/style.css">
+    <script src="asset/scripts/index.js"></script>
   </head>
 
   <body>
@@ -24,7 +24,7 @@
             alt="Learnix Logo"
             width="60px"
             heigh="auto"
-          />
+         >
 
           <div class="dropdown-menu">
             <div class="dropdown-item">
