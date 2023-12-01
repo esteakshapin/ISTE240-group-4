@@ -47,5 +47,7 @@
       </div>
     </div>
     <!-- End of Container-->
-  </body>
-</html>
+<?php
+  include("assets/inc/footer.php");
+?>
+
