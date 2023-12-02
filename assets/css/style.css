@@ -19,6 +19,16 @@ body {
   margin: 0;
   padding: 0;
 }
+.footer{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  font-style:italic;
+}
+.quiz{
+  /*add quiz css here*/
+}
 .active{
     color:#000000;
     text-decoration: none;
