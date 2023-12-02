@@ -1,5 +1,5 @@
 <?php
-  $page = "Home";
+  $page = "All Commands";
   include("assets/inc/header.php");
 ?>
 

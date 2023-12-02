@@ -19,7 +19,11 @@ body {
   margin: 0;
   padding: 0;
 }
-
+.active{
+    color:#000000;
+    text-decoration: none;
+    cursor: default;
+}
 .navcontainer {
   background-color: #1359f1;
   display: flex;

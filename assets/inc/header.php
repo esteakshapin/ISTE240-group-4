@@ -53,11 +53,24 @@
         <!-- End of logo class -->
 
         <ul class="menu">
-          <li>Item 1</li>
-          <li>Item 2</li>
-          <li>Item 3</li>
-          <li>Item 4</li>
-          <li>Item 5</li>
+          <li>
+            <a href="index.php"<?php if($page == "Home"){ echo 'class="active"'; } ?>>Home</a>
+          </li>
+          <li>
+            <a href="lesson1.php"<?php if($page == "Lesson 1"){ echo 'class="active"'; } ?>>Lesson 1</a>
+          </li>
+          <li>
+            <a href="lesson2.php"<?php if($page == "Lesson 2"){ echo 'class="active"'; } ?>>Lesson 2</a>
+          </li>
+          <li>
+            <a href="lesson3.php"<?php if($page == "Lesson 3"){ echo 'class="active"'; } ?>>Lesson 3</a>
+          </li>
+          <li>
+            <a href="lesson4.php"<?php if($page == "Lesson 4"){ echo 'class="active"'; } ?>>Lesson 4</a>
+          </li>
+          <li>
+            <a href="allcommands.php"<?php if($page == "All Commands"){ echo 'class="active"'; } ?>>Command Sheet</a>
+          </li>
         </ul>
       </div>
 
