@@ -71,6 +71,9 @@
           <li>
             <a href="allcommands.php"<?php if($page == "All Commands"){ echo 'class="active"'; } ?>>Command Sheet</a>
           </li>
+          <li>
+            <a href="quiz.php"<?php if($page == "Quiz"){ echo 'class="active"'; } ?>>Quiz</a>
+          </li>
         </ul>
       </div>
 
