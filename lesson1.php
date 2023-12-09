@@ -39,8 +39,7 @@
           <div class="question">
             <h3>
               Question 1: This a quiz testing you on what you've learned
-              throughout the lesson. 
-              <!-- git test -->
+              throughout the lesson.
             </h3>
           </div>
           <div class="quizcontainer">
