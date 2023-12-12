@@ -2,10 +2,17 @@
   $page = "Home";
   include("assets/inc/header.php");
 ?>
-      <div class="hero"></div>
+      <div class="hero">
+
+      </div>
 
       <h3>Website Description</h3>
-      <div class="webdescribe"></div>
+      <div class="webdescribe">
+        <!--<img src="assets/media/kernel_chart.jpg">-->
+        <p>
+        Unix is an operating system, originally created around the 1960s. Many modern operating systems such as Linux, MacOS, IOS, ChromeOS, Android, and even embedded operating systems for IOT devices are based wholly or in part on Unix. It pioneered many computing philosophies such as multi-user computing which originally allowed multiple people to access a mainframe at the same time. In the modern day, knowledge of the Unix operating system is important because it allows a user to more effectively interact with systems based on it, especially Linux which are very common in servers. Additionally, an understanding of Unix will force the user to better understand several high level concepts such as the hierarchical file system and how to manipulate it, user permissions, and CLI interfaces. With how many operating systems are based on it today, learning Unix and its commands will provide an excellent “bang for your buck” in knowledge learned in various systems.
+        </p>
+      </div>
 
       <div class="assignmentsContianer">
         <h2>Lessons</h2>

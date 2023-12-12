@@ -1,63 +1,35 @@
 <?php
-  $page = "Lesson 4";
-  include("assets/inc/header.php");
+$page = "Lesson 4";
+include("assets/inc/header.php");
 ?>
-      <div class="lessonplan">
-        <h3>Lesson Title</h3>
-        <div class="coverimage"></div>
-        <div class="lessontext"></div>
-        <div class="lessonquiz">
-          <h3>Lesson Quiz</h3>
-          <div class="question">
-            <h3>
-              Question 1: This a quiz testing you on what you've learned
-              throughout the lesson.
-            </h3>
-          </div>
-          <div class="quizcontainer">
-            <div class="quizbox">Option 1</div>
-            <div class="quizbox">Option 2</div>
-            <div class="quizbox">Option 3</div>
-            <div class="quizbox">Option 4</div>
-          </div>
-          <div class="carousel">
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="lessonplan">
-        <h3>Lesson 2</h3>
-        <div class="coverimage"></div>
-        <div class="lessontext"></div>
-        <div class="lessonquiz">
-          <h3>Lesson Quiz</h3>
-          <div class="question">
-            <h3>
-              Question 1: This a quiz testing you on what you've learned
-              throughout the lesson.
-            </h3>
-          </div>
-          <div class="quizcontainer">
-            <div class="quizbox">Option 1</div>
-            <div class="quizbox">Option 2</div>
-            <div class="quizbox">Option 3</div>
-            <div class="quizbox">Option 4</div>
-          </div>
-          <div class="carousel">
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-            <div class="carouselitem"></div>
-          </div>
-        </div>
-      </div>
-    </div>
+<div class="lessonplan">
+  <h3>Lesson Title</h3>
+  <div class="coverimage">
+    <img src="assets/media/permissions.png">
+  </div>
+  <div class="lessontext">
+    Unix, like most other operating systems, has the ability to create users with various roles as a means of controlling who accesses what content on the same computer. These roles and users can then be given or disallowed access to certain files. Each file has an owner and group associated with it. There are three entities that have permissions on a file: the owner, the user group associated with the file, and everyone else. These three groups can then be allowed or prohibited from reading, writing, or executing these files. An example permission set for a file is shown below. In this example, the owner is allowed to read and write the file, while anyone else including those in the file’s owning group can only read it.
+  </div>
+  <table>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    <tbody>
+      <tr>
+        <td>chmod</td>
+        <td>Change access permissions on certain roles for a file or folder</td>
+        <td>chmod u+x script.sh<br>(Allows users (u) to execute (e) script.sh)</td>
+      </tr>
+      <tr>
+        <td>chown</td>
+        <td>Change ownership permissions for a file or folder</td>
+        <td>chown john document.pdf<br>(Gives user john ownership of document.pdf)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 <?php
-  include("assets/inc/footer.php");
+include("assets/inc/footer.php");
 ?>
