@@ -37,7 +37,7 @@ include("assets/inc/header.php");
     <div class="card">
       <h3><b><a href="lesson1.php">Lesson 1</a></b></h3>
       <span class="systems active">The CLI and Linux Basics</span>
-      <p>HAHAHHA this is a test</p>
+      <p>HAHAHHA this is a test, hi this is joe</p>
     </div>
 
     <div class="card">
