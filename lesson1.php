@@ -3,7 +3,7 @@ $page = "Lesson 1";
 include("assets/inc/header.php");
 ?>
 <div class="lessonplan">
-  <h3>Lesson Title</h3>
+  <h3>Terminal /CLI Interface vs GUI</h3>
   <div class="coverimage">
     <img src="assets/media/cli-gui.png">
   </div>

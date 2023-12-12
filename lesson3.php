@@ -3,7 +3,7 @@ $page = "Lesson 3";
 include("assets/inc/header.php");
 ?>
 <div class="lessonplan">
-  <h3>Lesson Title</h3>
+  <h3>File Manipulation</h3>
   <div class="coverimage">
     <img src="assets/media/filemanip.png">
   </div>
@@ -16,7 +16,7 @@ include("assets/inc/header.php");
         <th>Command</th>
         <th>Description</th>
         <th>Example</th>
-      </tr>>
+      </tr>
       <tbody>
         <tr>
           <td>mv</td>

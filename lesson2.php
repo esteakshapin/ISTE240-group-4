@@ -3,7 +3,7 @@ $page = "Lesson 2";
 include("assets/inc/header.php");
 ?>
 <div class="lessonplan">
-  <h3>Lesson Title</h3>
+  <h3>Filesystem and Navigation</h3>
   <div class="coverimage">
     <img src="assets/media/filesystem.png">
   </div>

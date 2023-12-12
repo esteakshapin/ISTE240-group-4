@@ -3,7 +3,7 @@ $page = "Lesson 4";
 include("assets/inc/header.php");
 ?>
 <div class="lessonplan">
-  <h3>Lesson Title</h3>
+  <h3>User Management and Permissions</h3>
   <div class="coverimage">
     <img src="assets/media/permissions.png">
   </div>
