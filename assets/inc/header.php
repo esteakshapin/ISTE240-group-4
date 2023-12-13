@@ -28,25 +28,32 @@
 
           <div class="dropdown-menu">
             <div class="dropdown-item">
-              <span class="circle"></span> Option 1
+              <span class="circle"></span>
+              <a href="index.php"<?php if($page == "Home"){ echo 'class="active"'; } ?>>Home</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 2
+              <span class="circle"></span>
+              <a href="lesson1.php"<?php if($page == "Lesson 1"){ echo 'class="active"'; } ?>>Lesson 1</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 3
+              <span class="circle"></span>
+              <a href="lesson2.php"<?php if($page == "Lesson 2"){ echo 'class="active"'; } ?>>Lesson 2</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 4
+              <span class="circle"></span>
+              <a href="lesson3.php"<?php if($page == "Lesson 3"){ echo 'class="active"'; } ?>>Lesson 3</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 5
+              <span class="circle"></span>
+              <a href="lesson4.php"<?php if($page == "Lesson 4"){ echo 'class="active"'; } ?>>Lesson 4</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 6
+              <span class="circle"></span>
+              <a href="allcommands.php"<?php if($page == "All Commands"){ echo 'class="active"'; } ?>>Command Sheet</a>
             </div>
             <div class="dropdown-item">
-              <span class="circle"></span> Option 7
+              <span class="circle"></span>
+              <a href="quiz.php"<?php if($page == "Quiz"){ echo 'class="active"'; } ?>>Quiz</a>
             </div>
           </div>
         </div>
