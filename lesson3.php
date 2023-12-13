@@ -5,7 +5,7 @@ include("assets/inc/header.php");
 <div class="lessonplan">
   <h3>File Manipulation</h3>
   <div class="coverimage">
-    <img src="assets/media/filemanip.png">
+    <img class="lessonimg" src="assets/media/filemanip.png">
   </div>
   <div class="lessontext">
     The act of creating, editing, deleting, copying, and moving files is a fundamental part of computing that is typically done through a GUI interface on most personal consumer systems. All of the same actions can be performed with Unix or Unix-based systems using a CLI interface. It’s a very streamlined process but there are some peculiarities, such as how the mv (move) command is used to rename files. Gone are the days of having multiple file explorer or finder windows open to move files around, or wasting time clicking through subfolders when a simple mv command can perform the job just as well. Regardless, file manipulation with a CLI still has quite the learning curve since users have to forget old habits and learn new commands. To learn more about the commands used for file manipulation in Unix, click here (Link to filesystem navigation commands page) to learn the specific commands needed to perform the file operations you’re used to.

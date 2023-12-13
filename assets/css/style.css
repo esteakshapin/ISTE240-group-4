@@ -152,11 +152,16 @@ table, th, td {
   border-radius: 10px;
 }
 
+.lessonimg{
+  width: 100%
+}
+
 .coverimage {
   background-color: white;
   margin: 20px;
   padding: 20px;
-  height: 200px;
+  width: auto;
+  height: auto;
   border-radius: 10px;
 }
 
