@@ -20,7 +20,7 @@
         <div class="logo">
           <!-- Logo class to make the dropdown menu-->
           <img
-            src="assets/media/learnix logo.png"
+            src="assets/media/learnixLogo.png"
             alt="Learnix Logo"
             width="60px"
             heigh="auto"
