@@ -416,6 +416,10 @@ table, td, th{
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
+.commandtable{
+  display:flex;
+  justify-content: center;
+}
 
 th{
   background-color: #0091EF;
