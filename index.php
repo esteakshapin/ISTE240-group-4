@@ -3,12 +3,11 @@ $page = "Home";
 include("assets/inc/header.php");
 ?>
 <div class="hero">
-
+  <img src="assets/media/kernel_chart.jpg" class="lessonimg">
 </div>
 
 <h3>Website Description</h3>
 <div class="webdescribe">
-  <!--<img src="assets/media/kernel_chart.jpg">-->
   <p>
     Unix is an operating system, originally created around the 1960s. Many modern operating systems such as Linux,
     MacOS, IOS, ChromeOS, Android, and even embedded operating systems for IOT devices are based wholly or in part on
@@ -35,45 +34,33 @@ include("assets/inc/header.php");
 
   <div class="assignmentCardContainer">
     <div class="card">
-      <h3><b><a href="lesson1.php">Lesson 1</a></b></h3>
-      <span class="systems active">The CLI and Linux Basics</span>
-      <p>HAHAHHA this is a test, hi this is joe</p>
+      <h3><b><a href="lesson1.php">The CLI and Unix Basics</a></b></h3>
+      <span class="systems active">The CLI and Unix Basics</span>
+      <p>Learn about Unix basics and the CLI (Command Line Interface) and how it differs from a GUI</p>
     </div>
 
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson2.php">Lesson 2</a></b></h3>
+        <h3><b><a href="lesson2.php">Filesystem and Navigation</a></b></h3>
         <span class="command-line active">Filesystem and Navigation</span>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        <p>Learn the fundamental concepts surrounding filesystems and how to navigate them using a Unix terminal</p>
       </div>
     </div>
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson3.php">Lesson 3</a></b></h3>
+        <h3><b><a href="lesson3.php">File Manipulation</a></b></h3>
         <span class="file-systems active">File Manipulation</span>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        <p>Learn how file manipulation works on a CLI unix system using various commands</p>
       </div>
     </div>
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson4.php">Lesson 4</a></b></h3>
+        <h3><b><a href="lesson4.php">User Management and Permissions</a></b></h3>
         <span class="file-systems active">User Management and Permissions</span>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
-          est laborum.</p>
+        <p>Learn about how Unix handles users and permissions compared to other OS and what commands are used to manage access to system resources.</p>
       </div>
     </div>
   </div>

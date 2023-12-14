@@ -101,21 +101,20 @@ body {
 .menu li {
   margin-right: 20px;
 }
-
-.hero {
-  background-color: gray;
-  height: 300px;
+.hero, .webdescribe{
   margin: 20px;
   border-radius: 10px;
-}
-
-.webdescribe {
-  background-color: #8f19df;
   width: auto;
   height: auto;
   padding: 10px;
   margin: 20px;
-  border-radius: 10px;
+}
+.hero {
+  background-color: gray;
+}
+
+.webdescribe {
+  background-color: #8f19df;
 }
 
 .box {
@@ -158,7 +157,10 @@ body {
   margin-left:1rem;
 }
 .lessonimg{
-  width: 100%
+  display: block;
+  max-width: 60%;
+  height:auto;
+  margin:auto;
 }
 
 .coverimage {
