@@ -46,8 +46,9 @@ include("assets/inc/header.php");
       // looping thru the table and displaying each entry in an <li>
     
       if ($res) {
-        echo "inside mobile command - section";
+        echo "inside mobile command  res - section";
         while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+          echo "inside mobile command row - section";
           include "./assets/inc/mobile-commands.php";
         }
       } else {
