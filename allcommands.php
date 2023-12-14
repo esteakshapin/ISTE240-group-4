@@ -20,10 +20,16 @@ include("assets/inc/header.php");
       // querying for all the comments in the database
       $res = $conn->query('SELECT `command`, `description`, `example` FROM `commandStorage`');
 
+      $counter = 0;
+
       // looping thru the table and displaying each entry in an <li>
       if ($res) {
         while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-          echo "<tr><td>{$row['command']}</td></tr>";
+          $alternateColor = "";
+          if($counter % 2 != 0){
+              $alternateColor = "alternate-color-tr";
+          }
+          echo "<tr class='{$alternateColor}'><td>{$row['command']}</td><td>{$row['description']}</td><td>{$row['example']}</td></tr>";
         }
       } else {
         echo "Error in query execution: " . mysqli_error($conn);
