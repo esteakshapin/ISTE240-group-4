@@ -22,6 +22,8 @@ include("assets/inc/header.php");
       // querying for all the comments in the database
       $res = $conn->query('SELECT `command`, `description`, `example` FROM `commandStorage`');
 
+      $res2 = $res;
+
       $counter = 0;
 
       // looping thru the table and displaying each entry in an <li>
@@ -45,9 +47,9 @@ include("assets/inc/header.php");
     <?php
       // looping thru the table and displaying each entry in an <li>
     
-      if ($res) {
+      if ($res2) {
         echo "inside mobile command  res - section";
-        while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+        while ($row = mysqli_fetch_array($res2, MYSQLI_ASSOC)) {
           echo "inside mobile command row - section";
           include "./assets/inc/mobile-commands.php";
         }
