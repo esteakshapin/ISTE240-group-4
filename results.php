@@ -43,8 +43,7 @@ include("assets/inc/header.php");
             echo "<span class='correct'>" . ($i + 1) . ": " . $answers[$i] . " is correct!</span>";
             echo "<br>";
         } else {
-            $score = $score + 1;
-            echo "<span class='incorrect'>" . $i . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</span>";
+            echo "<span class='incorrect'>" . ($i + 1) . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</span>";
             echo "<br>";
         }
     }
