@@ -16,7 +16,7 @@ include("assets/inc/header.php");
     </thead>
     <tbody>
     <?php
-    include '../dbConn.php';
+    include '../../dbConn.php';
     // get all the comments in the database
     if ($conn) {
       // querying for all the comments in the database
