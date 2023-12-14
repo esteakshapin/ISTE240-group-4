@@ -3,7 +3,7 @@ $page = "Home";
 include("assets/inc/header.php");
 ?>
 <div class="hero">
-  <img src="assets/media/kernel_chart.jpg" class="lessonimg">
+  <img src="assets/media/kernel_chart.jpg" alt="Chart showing the evoluton of the Unix Kernel" class="lessonimg">
 </div>
 
 <h3>Website Description</h3>
@@ -64,8 +64,6 @@ include("assets/inc/header.php");
       </div>
     </div>
   </div>
-
-</div>
 </div>
 <!-- End of Container-->
 <?php

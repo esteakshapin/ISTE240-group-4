@@ -45,6 +45,8 @@ body {
 
 .logo {
   position: relative;
+  width: 60px;
+  height: auto;
 }
 
 .dropdown-menu {
