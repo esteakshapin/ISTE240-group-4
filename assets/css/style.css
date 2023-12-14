@@ -497,6 +497,7 @@ td {
   background-color: rgba(0, 145, 239, .44);
   border-radius: 10px;
   position: relative;
+  margin-bottom: 1rem;
 }
 
 .title-section {
