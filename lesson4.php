@@ -8,15 +8,21 @@ include("assets/inc/header.php");
     <img class="lessonimg" src="assets/media/permissions.png" alt="Image showing the three Unix permission entities">
   </div>
   <div class="lessontext">
-    Unix, like most other operating systems, has the ability to create users with various roles as a means of controlling who accesses what content on the same computer. These roles and users can then be given or disallowed access to certain files. Each file has an owner and group associated with it. There are three entities that have permissions on a file: the owner, the user group associated with the file, and everyone else. These three groups can then be allowed or prohibited from reading, writing, or executing these files. An example permission set for a file is shown below. In this example, the owner is allowed to read and write the file, while anyone else including those in the file’s owning group can only read it.
+    Unix, like most other operating systems, has the ability to create users with various roles as a means of
+    controlling who accesses what content on the same computer. These roles and users can then be given or disallowed
+    access to certain files. Each file has an owner and group associated with it. There are three entities that have
+    permissions on a file: the owner, the user group associated with the file, and everyone else. These three groups can
+    then be allowed or prohibited from reading, writing, or executing these files. An example permission set for a file
+    is shown below. In this example, the owner is allowed to read and write the file, while anyone else including those
+    in the file's owning group can only read it.
   </div>
   <div class="commandtable">
     <table>
-        <tr>
-          <th>Command</th>
-          <th>Description</th>
-          <th>Example</th>
-        </tr>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
       <tbody>
         <tr>
           <td>chmod</td>
