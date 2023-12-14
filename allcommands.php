@@ -27,6 +27,7 @@ include("assets/inc/header.php");
       // looping thru the table and displaying each entry in an <li>
       if ($res) {
         while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+            
             include './assets/inc/table-row.php';
             $counter+=1;
         }

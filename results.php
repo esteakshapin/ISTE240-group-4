@@ -36,19 +36,19 @@ include("assets/inc/header.php");
     $answer13 = returnValue('answer13');
     $answers = array($answer1, $answer2, $answer3, $answer4, $answer5, $answer6, $answer7, $answer8, $answer9, $answer10, $answer11, $answer12, $answer13);
     $correct = array("C", "A", "D", "C", "C", "A", "D", "A", "B", "C", "B", "A", "D", );
-    echo "<p class='bold'>Good work " . $name . "!<br></p>";
+    echo "<span class='bold'>Good work " . $name . "!<br></span>";
     for ($i = 0; $i < count($answers); $i++) {
         if ($answers[$i] == $correct[$i]) {
             $score = $score + 1;
-            echo "<p class='correct'>" . ($i + 1) . ": " . $answers[$i] . " is correct!</p>";
+            echo "<span class='correct'>" . ($i + 1) . ": " . $answers[$i] . " is correct!</span>";
             echo "<br>";
         } else {
-            echo "<p class='incorrect'>" . $i . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</p>";
+            echo "<span class='incorrect'>" . ($i + 1) . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</span>";
             echo "<br>";
         }
     }
     $grade = ($score / 13) * 100;
-    echo "<p class='bold'>Your score is: " . $score . "/13 (" . round($grade, 2) . "%)</p>";
+    echo "<span class='bold'>Your score is: " . $score . "/13 (" . round($grade, 2) . "%)</span>";
     ?>
     <a id="backQuiz" href="quiz.php">Back to Quiz</a>
 </div>
