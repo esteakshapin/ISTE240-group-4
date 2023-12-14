@@ -117,3 +117,25 @@ function validateForm() {
         return false;
     }
 }
+
+function expand(element) {
+    // get the collapsible element of the clicked arrow
+    var collapsibleElement = element.nextElementSibling.firstElementChild;
+    
+    // if element is already expanded, collapse it
+    if (collapsibleElement.classList.contains("expand")) {
+        // take away the rotate class from the arrow to make it point down again
+        element.lastElementChild.classList.remove("rotate");
+
+        // collapse the expanded section
+        collapsibleElement.classList.remove("expand");
+    } else {
+        // rotate the arrow to point upward
+        element.lastElementChild.classList.add("rotate");
+
+        // expand the collapsed section
+        collapsibleElement.classList.add("expand");
+
+    }
+    
+}

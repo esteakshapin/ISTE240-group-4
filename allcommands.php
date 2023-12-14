@@ -2,55 +2,97 @@
 $page = "All Commands";
 include("assets/inc/header.php");
 ?>
-<table>
-  <tr>
-    <th>Command</th>
-    <th>Description</th>
-    <th>Example</th>
-  </tr>
-  <tbody>
+
+<div class="content">
+  <h1>All Commands</h1>
+
+  <?php
+  include './dbConn.php';
+  // get all the comments in the database
+  if ($conn){
+    // querying for all the comments in the database
+    $res = $conn->query('SELECT `command`, `description`, `example` FROM `commandStorage`');
+    
+    // looping thru the table and displaying each entry in an <li>
+    if ($res) {
+        while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+            echo $row['command'];
+        }
+    } else {
+        echo "Error in query execution: " . mysqli_error($conn);
+    }
+  }
+  
+  ?>
+
+  <table>
     <tr>
-      <td>cd</td>
-      <td>Allows users to change tdeir working directory</td>
-      <td>cd ~/Documents/<br>Changes user’s working directory to tdeir documents folder</td>
+      <th>Command</th>
+      <th>Description</th>
+      <th>Example</th>
     </tr>
-    <tr>
-      <td>pwd</td>
-      <td>Prints current working directory</td>
-      <td>pwd</td>
-    </tr>
-    <tr>
-      <td>ls</td>
-      <td>Prints files and folders in current working directory</td>
-      <td>ls -a<br>(a indicates tdat hidden files should be visible)</td>
-    </tr>
-    <tr>
-      <td>mv</td>
-      <td>Move or rename files. Botd initial file name and location and final file name and location must be specified, so having a different final file name but tde same location essentially renames tde file in place. Specifying a different final file location witd tde same name will move tde file while retaining its name.</td>
-      <td>mv document.pdf ~/Documents/<br>(Moves document.pdf to tde user’s documents folder. Does not change its name)<br>mv document.pdf resume.pdf<br>(Renames document.pdf to resume.pdf but does not move file)</td>
-    </tr>
-    <tr>
-      <td>cp</td>
-      <td>Copies a file</td>
-      <td>cp document.pdf ~/Documents/documentcopy.pdf<br>(Copies document.pdf to tde user’s documents folder under tde name “documentcopy.pdf”</td>
-    </tr>
-    <tr>
-      <td>rm</td>
-      <td>Deletes a file or folder. tde -r flag can be used to delete a folder and its contents. Careful, tdere’s no recycling bin here by default so deletion is permanent! </td>
-      <td>rm document.pdf’<br>(deletes document.pdf)<br>rm -r ~/Documents<br>(deletes tde documents folder and recursively deletes all files and subfolders inside. BE VERY CAREFUL.</td>
-    </tr>
-    <tr>
-      <td>chmod</td>
-      <td>Change access permissions on certain roles for a file or folder</td>
-      <td>chmod u+x script.sh<br>(Allows users (u) to execute (e) script.sh)</td>
-    </tr>
-    <tr>
-      <td>chown</td>
-      <td>Change ownership permissions for a file or folder</td>
-      <td>chown john document.pdf<br>(Gives user john ownership of document.pdf)</td>
-    </tr>
-  </tbody>
-</table>
+    <tbody>
+      <tr>
+        <td>cd</td>
+        <td>Allows users to change tdeir working directory</td>
+        <td>cd ~/Documents/<br>Changes user’s working directory to tdeir documents folder</td>
+      </tr>
+      <tr class="alternate-color-tr">
+        <td>pwd</td>
+        <td>Prints current working directory</td>
+        <td>pwd</td>
+      </tr>
+      <tr>
+        <td>ls</td>
+        <td>Prints files and folders in current working directory</td>
+        <td>ls -a<br>(a indicates tdat hidden files should be visible)</td>
+      </tr>
+      <tr>
+        <td>mv</td>
+        <td>Move or rename files. Botd initial file name and location and final file name and location must be specified, so having a different final file name but tde same location essentially renames tde file in place. Specifying a different final file location witd tde same name will move tde file while retaining its name.</td>
+        <td>mv document.pdf ~/Documents/<br>(Moves document.pdf to tde user’s documents folder. Does not change its name)<br>mv document.pdf resume.pdf<br>(Renames document.pdf to resume.pdf but does not move file)</td>
+      </tr>
+      <tr>
+        <td>cp</td>
+        <td>Copies a file</td>
+        <td>cp document.pdf ~/Documents/documentcopy.pdf<br>(Copies document.pdf to tde user’s documents folder under tde name “documentcopy.pdf”</td>
+      </tr>
+      <tr>
+        <td>rm</td>
+        <td>Deletes a file or folder. tde -r flag can be used to delete a folder and its contents. Careful, tdere’s no recycling bin here by default so deletion is permanent! </td>
+        <td>rm document.pdf’<br>(deletes document.pdf)<br>rm -r ~/Documents<br>(deletes tde documents folder and recursively deletes all files and subfolders inside. BE VERY CAREFUL.</td>
+      </tr>
+      <tr>
+        <td>chmod</td>
+        <td>Change access permissions on certain roles for a file or folder</td>
+        <td>chmod u+x script.sh<br>(Allows users (u) to execute (e) script.sh)</td>
+      </tr>
+      <tr>
+        <td>chown</td>
+        <td>Change ownership permissions for a file or folder</td>
+        <td>chown john document.pdf<br>(Gives user john ownership of document.pdf)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- mobile version -->
+  <div class="mobile-command-section">
+    <div class="command-container">
+      <div class="title-section" onclick="expand(this)">
+        <span>Command Name</span>
+        <img src="./assets/media/down-arrow.svg" alt="Down Arrow">
+      </div>
+      <div class="collapsible-container">
+        <div class="collapsible ">
+          <p><b>Description:</b> Allows users to change their working directory</p>
+          <p><b>Example:</b> cd ~/Documents/ Changes user’s working directory to tdeir documents folder</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+
 <?php
 include("assets/inc/footer.php");
 ?>

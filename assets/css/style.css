@@ -19,9 +19,7 @@ body {
   margin: 0;
   padding: 0;
 }
-table, th, td {
-  border: 1px solid black;
-}
+
 .footer{
   display:flex;
   align-items:center;
@@ -405,4 +403,79 @@ table, th, td {
 .incorrect{
     color:red;
     font-weight:bold;
+}
+
+/* All commands page styling */
+.content{
+  padding: 2rem;
+}
+
+table, td, th{
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+
+th{
+  background-color: #0091EF;
+  color: white;
+}
+
+th, td{
+  padding: .5rem;
+}
+
+.alternate-color-tr{
+  background-color: rgba(0, 145, 239, .44);
+}
+
+.mobile-command-section{
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  table{
+    display: none;
+  }
+
+  .mobile-command-section{
+    display: block;
+  }
+}
+
+.command-container{
+  padding: 1rem;
+  background-color: rgba(0, 145, 239, .44);
+  border-radius: 10px;
+  position: relative;
+}
+
+.title-section{
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible-container{
+  overflow: hidden;
+}
+
+.collapsible{
+  font-size: 12px;
+  padding: .3rem .5rem;
+  padding-bottom: 0px;
+  margin-top: -100%;
+  transition-duration: 0.5s;
+  transition-property: margin;
+}
+
+.title-section img{
+  transition-duration: 0.8s;
+  transition-property: transform;
+}
+
+.title-section img.rotate{
+  transform: rotate(180deg);
+}
+
+.collapsible-container .collapsible.expand{
+  margin-top: 0;
 }
