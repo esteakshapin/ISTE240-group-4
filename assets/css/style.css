@@ -148,7 +148,17 @@ table, th, td {
   padding: 20px;
   border-radius: 10px;
 }
-
+.quizquestion{
+  font-weight: bold;
+  color:#1359f1;
+}
+.quizunit{
+  font-weight: bold;
+  color: #8f19df;
+}
+#form{
+  margin-left:1rem;
+}
 .lessonimg{
   width: 100%
 }
@@ -178,7 +188,9 @@ table, th, td {
   height: 400px;
   border-radius: 10px;
 }
-
+.bold{
+  font-weight: bold;
+}
 .question {
   text-align: center;
 }
