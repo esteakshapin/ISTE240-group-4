@@ -7,13 +7,15 @@ include("assets/inc/header.php");
   <h1>All Commands</h1>
 
   <table>
-    <tr>
-      <th>Command</th>
-      <th>Description</th>
-      <th>Example</th>
-    </tr>
+    <thead>
+      <tr>
+        <th>Command</th>
+        <th>Description</th>
+        <th>Example</th>
+      </tr>
+    </thead>
     <tbody>
-      <?php
+    <?php
     include './dbConn.php';
     // get all the comments in the database
     if ($conn) {
