@@ -77,18 +77,16 @@ include("assets/inc/header.php");
 
   <!-- mobile version -->
   <div class="mobile-command-section">
-    <div class="command-container">
-      <div class="title-section" onclick="expand(this)">
-        <span>Command Name</span>
-        <img src="./assets/media/down-arrow.svg" alt="Down Arrow">
-      </div>
-      <div class="collapsible-container">
-        <div class="collapsible ">
-          <p><b>Description:</b> Allows users to change their working directory</p>
-          <p><b>Example:</b> cd ~/Documents/ Changes user’s working directory to tdeir documents folder</p>
-        </div>
-      </div>
-    </div>
+    <?php 
+      // looping thru the table and displaying each entry in an <li>
+      if ($res) {
+        while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
+          include "./assets/inc/mobile-commands.php";
+        }
+      } else {
+          echo "Error in query execution: " . mysqli_error($conn);
+      }
+    ?>
   </div>
   
 </div>
