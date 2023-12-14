@@ -22,8 +22,6 @@ include("assets/inc/header.php");
       // querying for all the comments in the database
       $res = $conn->query('SELECT `command`, `description`, `example` FROM `commandStorage`');
 
-      $res2 = $res;
-
       $counter = 0;
 
       // looping thru the table and displaying each entry in an <li>
@@ -45,18 +43,23 @@ include("assets/inc/header.php");
   <!-- mobile version -->
   <div class="mobile-command-section">
     <?php
-      // looping thru the table and displaying each entry in an <li>
-    
-      if ($res2) {
-        echo "inside mobile command  res " . $res;
-        while ($row = mysqli_fetch_array($res2, MYSQLI_ASSOC)) {
-          echo "inside mobile command row - section";
-          include "./assets/inc/mobile-commands.php";
+      include './dbConn.php';
+      // get all the comments in the database
+      if ($conn) {
+        // querying for all the comments in the database
+        $res2 = $conn->query('SELECT `command`, `description`, `example` FROM `commandStorage`');
+
+        // looping thru the table and displaying each entry in an <li>
+        if ($res2) {
+          while ($row = mysqli_fetch_array($res2, MYSQLI_ASSOC)) {
+            include "./assets/inc/mobile-commands.php";
+          }
+        } else {
+          echo "Error in query execution: " . mysqli_error($conn);
         }
-      } else {
-        echo "Error in query execution: " . mysqli_error($conn);
       }
-      ?>
+
+    ?>
   </div>
 
 </div>
