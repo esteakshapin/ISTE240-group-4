@@ -40,10 +40,10 @@ include("assets/inc/header.php");
     for ($i = 0; $i < count($answers); $i++) {
         if ($answers[$i] == $correct[$i]) {
             $score = $score + 1;
-            echo "<p2 class='correct'>" . ($i + 1) . ": " . $answers[$i] . " is correct!</p2>";
+            echo "<p class='correct'>" . ($i + 1) . ": " . $answers[$i] . " is correct!</p>";
             echo "<br>";
         } else {
-            echo "<p2 class='incorrect'>" . $i . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</p2>";
+            echo "<p class='incorrect'>" . $i . ": " . $answers[$i] . " is incorrect, the answer was " . $correct[$i] . "</p>";
             echo "<br>";
         }
     }
