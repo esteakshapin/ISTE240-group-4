@@ -3,38 +3,55 @@ h3 {
 }
 
 h5 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 14px;
   color: gray;
   padding: 0px;
 }
 
 h6 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.footer{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  font-style:italic;
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-style: italic;
 }
-.quiz{
-  /*add quiz css here*/
+
+#backQuiz {
+  color: #1359f1;
 }
-.active{
-    color:#000000;
-    text-decoration: none;
-    cursor: default;
+
+.lessonCardHead {
+  color: #0f0f0f;
 }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: azure;
+}
+
+a:hover {
+  color: gray;
+}
+
+.active {
+  color: #000000;
+  text-decoration: none;
+  cursor: default;
+}
+
 .navcontainer {
   background-color: #1359f1;
   display: flex;
@@ -62,7 +79,8 @@ body {
 
 .dropdown-item {
   color: white;
-  margin-bottom: 20px; /* Adding space between each element */
+  margin-bottom: 20px;
+  /* Adding space between each element */
 }
 
 .circle {
@@ -79,6 +97,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .profilepic {
   background-color: antiquewhite;
   width: 50px;
@@ -103,7 +122,9 @@ body {
 .menu li {
   margin-right: 20px;
 }
-.hero, .webdescribe{
+
+.hero,
+.webdescribe {
   margin: 20px;
   border-radius: 10px;
   width: auto;
@@ -111,6 +132,7 @@ body {
   padding: 10px;
   margin: 20px;
 }
+
 .hero {
   background-color: gray;
 }
@@ -147,22 +169,26 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-.quizquestion{
+
+.quizquestion {
   font-weight: bold;
-  color:#1359f1;
+  color: #1359f1;
 }
-.quizunit{
+
+.quizunit {
   font-weight: bold;
   color: #8f19df;
 }
-#form{
-  margin-left:1rem;
+
+#form {
+  margin-left: 1rem;
 }
-.lessonimg{
+
+.lessonimg {
   display: block;
   max-width: 60%;
-  height:auto;
-  margin:auto;
+  height: auto;
+  margin: auto;
 }
 
 .coverimage {
@@ -190,9 +216,11 @@ body {
   height: 400px;
   border-radius: 10px;
 }
-.bold{
+
+.bold {
   font-weight: bold;
 }
+
 .question {
   text-align: center;
 }
@@ -234,7 +262,8 @@ body {
   .lessonbox {
     display: grid;
     grid-template-columns: repeat(1, 6fr);
-    grid-gap: 20px; /* Space between the boxes */
+    grid-gap: 20px;
+    /* Space between the boxes */
     column-gap: 20px;
     justify-content: space-between;
   }
@@ -255,7 +284,7 @@ body {
     padding: 10px;
   }
 
-  .dropdown-menu{
+  .dropdown-menu {
     display: none;
     list-style: none;
     position: absolute;
@@ -269,7 +298,7 @@ body {
   .logo:hover .dropdown-menu {
     display: block;
   }
-  
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -293,11 +322,11 @@ body {
     height: 425px;
     border-radius: 10px;
   }
-  
+
 }
 
 /* Lesson Section */
-.assignmentsContianer{
+.assignmentsContianer {
   width: calc(100% - 6rem);
   margin: 2rem;
   margin-top: 0px;
@@ -314,54 +343,61 @@ body {
   background: #00C6B6;
 }
 
-.assignmentsContianer h2, h4, h3{
+.assignmentsContianer h2,
+h4,
+h3 {
   margin-top: 0px;
   margin-bottom: 0px;
 }
 
-.assignmentsContianer h3{
+.assignmentsContianer h3 {
   margin: 0px;
 }
 
-.filterOptionsContainer{
+.filterOptionsContainer {
   display: flex;
   /* background-color: aquamarine; */
   justify-content: flex-end;
   align-items: center;
   gap: 1rem;
 }
-.filterOptions{
+
+.filterOptions {
   padding: .5rem;
   border-radius: 4px;
   font-size: small;
   border: 1px solid black;
-  cursor: pointer; 
+  cursor: pointer;
   background-color: white;
 }
 
 /* setting the color codes for each filter option. will allow users to differntiate between each option. The color pallette was borrowed from https://www.schemecolor.com/light-gradient.php */
-.systems.active{
+.systems.active {
   background-color: rgb(251, 231, 218);
 }
-.systems:hover{
-  background-color: rgb(241, 221, 208); /* The hover RGB is 10 points less than the active value. This makes the color darker and visible when hovering while maintaining the same hue */
+
+.systems:hover {
+  background-color: rgb(241, 221, 208);
+  /* The hover RGB is 10 points less than the active value. This makes the color darker and visible when hovering while maintaining the same hue */
 }
 
-.command-line.active{
+.command-line.active {
   background-color: rgb(244, 253, 228);
 }
-.command-line:hover{
+
+.command-line:hover {
   background-color: rgb(234, 243, 218);
 }
 
-.file-systems.active{
+.file-systems.active {
   background-color: rgb(245, 214, 229);
 }
-.file-sustems:hover{
+
+.file-sustems:hover {
   background-color: rgb(235, 204, 219);
 }
 
-.assignmentCardContainer{
+.assignmentCardContainer {
   display: flex;
   padding: 2rem;
   flex-wrap: wrap;
@@ -372,7 +408,7 @@ body {
 /* The card design and css was borrowed from w3schools (https://www.w3schools.com/howto/howto_css_cards.asp) */
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   max-width: 300px;
   padding: 1rem;
@@ -381,16 +417,16 @@ body {
 
 /* On mouse-over, add a deeper shadow */
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* end of code borrowed from w3schools */
 
-.card{
+.card {
   border-radius: 10px;
 }
 
-.card span{
+.card span {
   display: inline-block;
   font-size: small;
   font-weight: lighter;
@@ -398,75 +434,81 @@ body {
   border-radius: 4px;
 }
 
-.hide{
+.hide {
   display: none;
 }
-.correct{
-    color:green;
+
+.correct {
+  color: green;
 }
-.incorrect{
-    color:red;
-    font-weight:bold;
+
+.incorrect {
+  color: red;
+  font-weight: bold;
 }
 
 /* All commands page styling */
-.content{
+.content {
   padding: 2rem;
 }
 
-table, td, th{
+table,
+td,
+th {
   border: 1px solid lightgray;
   border-collapse: collapse;
 }
-.commandtable{
-  display:flex;
+
+.commandtable {
+  display: flex;
   justify-content: center;
 }
 
-th{
+th {
   background-color: #0091EF;
   color: white;
 }
 
-th, td{
+th,
+td {
   padding: .5rem;
 }
 
-.alternate-color-tr{
+.alternate-color-tr {
   background-color: rgba(0, 145, 239, .44);
 }
 
-.mobile-command-section{
+.mobile-command-section {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
-  table{
+  table {
     display: none;
   }
 
-  .mobile-command-section{
+  .mobile-command-section {
     display: block;
   }
 }
 
-.command-container{
+.command-container {
   padding: 1rem;
   background-color: rgba(0, 145, 239, .44);
   border-radius: 10px;
   position: relative;
 }
 
-.title-section{
+.title-section {
   display: flex;
   justify-content: space-between;
 }
 
-.collapsible-container{
+.collapsible-container {
   overflow: hidden;
 }
 
-.collapsible{
+.collapsible {
   font-size: 12px;
   padding: .3rem .5rem;
   padding-bottom: 0px;
@@ -475,15 +517,15 @@ th, td{
   transition-property: margin;
 }
 
-.title-section img{
+.title-section img {
   transition-duration: 0.8s;
   transition-property: transform;
 }
 
-.title-section img.rotate{
+.title-section img.rotate {
   transform: rotate(180deg);
 }
 
-.collapsible-container .collapsible.expand{
+.collapsible-container .collapsible.expand {
   margin-top: 0;
 }

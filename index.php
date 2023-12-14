@@ -34,14 +34,14 @@ include("assets/inc/header.php");
 
   <div class="assignmentCardContainer">
     <div class="card">
-      <h3><b><a href="lesson1.php">The CLI and Unix Basics</a></b></h3>
+      <h3><b><a class="lessonCardHead" href="lesson1.php">The CLI and Unix Basics</a></b></h3>
       <span class="systems active">The CLI and Unix Basics</span>
       <p>Learn about Unix basics and the CLI (Command Line Interface) and how it differs from a GUI</p>
     </div>
 
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson2.php">Filesystem and Navigation</a></b></h3>
+        <h3><b><a class="lessonCardHead" href="lesson2.php">Filesystem and Navigation</a></b></h3>
         <span class="command-line active">Filesystem and Navigation</span>
 
         <p>Learn the fundamental concepts surrounding filesystems and how to navigate them using a Unix terminal</p>
@@ -49,7 +49,7 @@ include("assets/inc/header.php");
     </div>
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson3.php">File Manipulation</a></b></h3>
+        <h3><b><a class="lessonCardHead" href="lesson3.php">File Manipulation</a></b></h3>
         <span class="file-systems active">File Manipulation</span>
 
         <p>Learn how file manipulation works on a CLI unix system using various commands</p>
@@ -57,10 +57,11 @@ include("assets/inc/header.php");
     </div>
     <div class="card">
       <div class="container">
-        <h3><b><a href="lesson4.php">User Management and Permissions</a></b></h3>
+        <h3><b><a class="lessonCardHead" href="lesson4.php">User Management and Permissions</a></b></h3>
         <span class="file-systems active">User Management and Permissions</span>
 
-        <p>Learn about how Unix handles users and permissions compared to other OS and what commands are used to manage access to system resources.</p>
+        <p>Learn about how Unix handles users and permissions compared to other OS and what commands are used to manage
+          access to system resources.</p>
       </div>
     </div>
   </div>
