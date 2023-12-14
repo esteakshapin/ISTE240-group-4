@@ -25,11 +25,8 @@ include("assets/inc/header.php");
       // looping thru the table and displaying each entry in an <li>
       if ($res) {
         while ($row = mysqli_fetch_array($res, MYSQLI_ASSOC)) {
-          $alternateColor = "";
-          if($counter % 2 != 0){
-              $alternateColor = "alternate-color-tr";
-          }
-          echo "<tr class='{$alternateColor}'><td>{$row['command']}</td><td>{$row['description']}</td><td>{$row['example']}</td></tr>";
+            include './assets/inc/table-row.php';
+            $counter+=1;
         }
       } else {
         echo "Error in query execution: " . mysqli_error($conn);
@@ -50,11 +47,7 @@ include("assets/inc/header.php");
       <th>Example</th>
     </tr>
     <tbody>
-      <tr>
-        <td>cd</td>
-        <td>Allows users to change tdeir working directory</td>
-        <td>cd ~/Documents/<br>Changes user's working directory to tdeir documents folder</td>
-      </tr>
+      
       <tr class="alternate-color-tr">
         <td>pwd</td>
         <td>Prints current working directory</td>
